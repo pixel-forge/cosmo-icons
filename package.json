@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/pixel-forge/cosmo-icons#readme",
   "devDependencies": {
+    "@types/react": "^18.2.20",
+    "react": "^18.2.0",
     "typescript": "^5.1.6"
   }
 }

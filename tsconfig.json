@@ -4,9 +4,11 @@
     "module": "commonjs",
     "outDir": "./dist",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "jsx": "react"
   },
   "include": [
+    "custom.d.ts",
     "src/**/*.ts"
   ]
 }
