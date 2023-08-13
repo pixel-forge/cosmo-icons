@@ -1,6 +1,6 @@
 {
   "name": "@pixel-forge/cosmo-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "clean": "bash scripts/clean-dist.sh",
     "transfer-files": "bash scripts/file-transfer.sh",
     "build": "npm run clean && npm run typescript && npm run transfer-files",
-    "publish": "npm publish --access public"
+    "deploy": "npm publish --access public"
   },
   "repository": {
     "type": "git",
