@@ -6,8 +6,9 @@
   "scripts": {
     "typescript": "tsc",
     "clean": "bash scripts/clean-dist.sh",
+    "create-svgs": "svgr src/svgs",
     "transfer-files": "bash scripts/file-transfer.sh",
-    "build": "npm run clean && npm run typescript && npm run transfer-files",
+    "build": "npm run clean && npm run create-svgs && npm run typescript",
     "deploy": "npm publish --access public"
   },
   "repository": {
@@ -21,6 +22,8 @@
   },
   "homepage": "https://github.com/pixel-forge/cosmo-icons#readme",
   "devDependencies": {
+    "@svgr/cli": "^8.1.0",
+    "@types/node": "^20.5.1",
     "@types/react": "^18.2.20",
     "react": "^18.2.0",
     "typescript": "^5.1.6"

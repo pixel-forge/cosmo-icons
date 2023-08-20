@@ -1,10 +1,8 @@
 import * as React from 'react';
-import GearURL, {ReactComponent as Gear} from './svgs/gear.svg';
-import GearsURL, {ReactComponent as Gears} from './svgs/gears.svg';
+import {Gear, Gears} from './icon-components';
 
 type CosmoIcon = {
-	component: (props:React.HTMLProps<HTMLDivElement>) => React.JSX.Element;
-	url: string;
+	solid: (props:React.HTMLProps<HTMLDivElement>) => React.JSX.Element;
 }
 
 const cosmoIcon = (Icon:React.ElementType) => (props:React.HTMLProps<HTMLDivElement>) => {
@@ -14,6 +12,6 @@ const cosmoIcon = (Icon:React.ElementType) => (props:React.HTMLProps<HTMLDivElem
 }
 
 export const CosmoIcons:{[K:string]: CosmoIcon} = {
-	gear: {component: cosmoIcon(Gear), url: GearURL},
-	gears: {component: cosmoIcon(Gears), url: GearsURL},
+	gear: {solid: cosmoIcon(Gear)},
+	gears: {solid: cosmoIcon(Gears)},
 }
