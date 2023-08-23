@@ -37,6 +37,22 @@ Cosmo-icons uses this naming convention for 2 reasons:
 * Consistent structuring makes it easy for the user to target parts of the icon for styling and animating.
 * Cosmo-icons uses these classes to provide pre-made animations.
 
+## SVG Custom Attributes
+
+Cosmo-icons uses SASS functions to target specific parts of svg elements and decides whether to apply certain css attributes by the attribute values on the element,
+in order to apply color more easily.
+e.g: </br> A path element that looks like this: 
+```svg
+<path data-ci-fill="false"/>
+```
+Will not be targeted by Cosmo-icons created sass functions that set the css "fill" attribute. 
+
+| Attribute      | values         | description                                                                   |
+|----------------|----------------|-------------------------------------------------------------------------------|
+| data-ci-type   | solid, outline | Flags the type of the icon                                                    |
+| data-ci-fill   | true, false    | Flags whether an SVG element should be affected by the css "fill" attribute   |
+| data-ci-stroke | true, false    | Flags whether an SVG element should be affected by the css "stroke" attribute |
+
 ## License and Copyright
 This package is released under the terms of the [Apache-2.0 license](https://www.apache.org/licenses/LICENSE-2.0)<br>
 All the icons in this package are created by us. 
