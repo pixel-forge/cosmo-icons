@@ -1,0 +1,20 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 160 119.45"
+    class="ci__email"
+    data-ci-type="outline"
+    stroke-width="2"
+    stroke="#000"
+    fill="none"
+>
+  <path
+      d="m1,38.5v65c0,8.284,6.716,15,15,15h128c8.284,0,15-6.716,15-15V38.5l-72.09,37.414c-4.332,2.248-9.487,2.248-13.819,0L1,38.5Z"
+      data-ci-fill="false"
+      data-ci-stroke="true"
+  />
+  <path
+      d="m1,15.981v22.97l72.09,37.365c4.332,2.245,9.487,2.245,13.819,0l72.09-37.365V15.981c0-8.274-6.716-14.981-15-14.981H16C7.716,1,1,7.707,1,15.981Z"
+      data-ci-fill="false"
+      data-ci-stroke="true"
+  />
+</svg>
