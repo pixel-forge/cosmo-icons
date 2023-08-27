@@ -11,6 +11,23 @@ via npm:
 npm i @pixel-forge/cosmo-icons
 ```
 
+## Icon Types
+
+There are 3 types of icons:
+
+| Regular                                                                   | Solid                                                         | Outline                                                         |
+|---------------------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|
+| <img src="./public/gears-solid.svg" style="background:white;width:200px"> | <img src="./public/gears-solid.svg" style="background:white;width:200px"> | <img src="./public/gears-outline.svg" style="background:white;width:200px"> |
+
+Using the icon is done in this manner:
+```tsx
+//Call Structure
+<CosmoIcons.icon-name.icon-type {props}/>
+
+//Example
+<CosmoIcons.gears.solid className={'custom-class'}/>
+```
+
 ## Structure
 icons are wrapped by a "div" element with a class "cosmo-icon" combined with the optional class passed by the user:
 ```tsx
