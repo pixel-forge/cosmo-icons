@@ -1,6 +1,6 @@
 {
   "name": "@pixel-forge/cosmo-icons",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
   "main": "dist/index.js",
   "keywords": [
@@ -14,7 +14,7 @@
     "clean": "bash scripts/clean-dist.sh",
     "create-svgs": "svgr src/svgs",
     "transfer-files": "bash scripts/file-transfer.sh",
-    "build": "npm run clean && npm run create-svgs && npm run typescript",
+    "build": "npm run clean && npm run create-svgs && npm run transfer-files && npm run typescript",
     "deploy": "npm publish --access public"
   },
   "repository": {
