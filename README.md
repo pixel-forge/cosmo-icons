@@ -1,5 +1,5 @@
-## cosmo-icons [![npm version](https://badge.fury.io/js/@pixel-forge%2Fcosmo-icons.svg)](https://badge.fury.io/js/@pixel-forge%2Fcosmo-icons) 
-Cosmo-icons is a tool that provides common icons in animatable SVG format as react components.
+# cosmo-icons [![npm version](https://badge.fury.io/js/@pixel-forge%2Fcosmo-icons.svg)](https://badge.fury.io/js/@pixel-forge%2Fcosmo-icons) 
+Cosmo Icons is a tool that provides common icons in animatable SVG format as react components.
 
 ## Why?
 The point is to provide commonly used icons in a logically structured way inside your project without downloading svg files from other sources. cosmo-icons provides a focused group
