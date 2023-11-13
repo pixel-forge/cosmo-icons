@@ -1,12 +1,26 @@
 import * as React from 'react';
-import {EmailOutline, EmailSolid, GearOutline, GearSolid, GearsOutline, GearsSolid, SearchOutline, SearchSolid} from './icon-components';
+import {
+	FilterOutline,
+	FilterRegular,
+	FilterSolid,
+	GearOutline,
+	GearRegular,
+	GearSolid,
+	GearsOutline,
+	GearsRegular,
+	GearsSolid,
+	MenuOutline,
+	MenuRegular,
+	MenuSolid,
+	SearchOutline,
+	SearchRegular,
+	SearchSolid,
+	VOutline,
+	VRegular,
+	VSolid
+} from './icon-components';
 
 type CosmoIconSupplier = (props: React.HTMLProps<HTMLDivElement>) => React.JSX.Element;
-
-type CosmoIcon = {
-	solid: CosmoIconSupplier;
-	outline?: CosmoIconSupplier;
-}
 
 const cosmoIcon = (Icon: React.ElementType): CosmoIconSupplier => (props) => {
 	const {className, ...rest} = props;
@@ -14,9 +28,11 @@ const cosmoIcon = (Icon: React.ElementType): CosmoIconSupplier => (props) => {
 	return <div className={_className} {...rest}><Icon/></div>;
 };
 
-export const CosmoIcons: { [K: string]: CosmoIcon } = {
-	email: {solid:cosmoIcon(EmailSolid),outline:cosmoIcon(EmailOutline)},
-	gear: {solid: cosmoIcon(GearSolid), outline: cosmoIcon(GearOutline)},
-	gears: {solid: cosmoIcon(GearsSolid), outline: cosmoIcon(GearsOutline)},
-	search: {solid:cosmoIcon(SearchSolid),outline:cosmoIcon(SearchOutline)},
+export const CosmoIcons = {
+	gear: {regular: cosmoIcon(GearRegular), solid: cosmoIcon(GearSolid), outline: cosmoIcon(GearOutline)},
+	gears: {regular: cosmoIcon(GearsRegular), solid: cosmoIcon(GearsSolid), outline: cosmoIcon(GearsOutline)},
+	search: {regular: cosmoIcon(SearchRegular), solid: cosmoIcon(SearchSolid), outline: cosmoIcon(SearchOutline)},
+	menu: {regular: cosmoIcon(MenuRegular), solid: cosmoIcon(MenuSolid), outline: cosmoIcon(MenuOutline)},
+	filter: {regular: cosmoIcon(FilterRegular), solid: cosmoIcon(FilterSolid), outline: cosmoIcon(FilterOutline)},
+	v: {regular: cosmoIcon(VRegular), solid: cosmoIcon(VSolid), outline: cosmoIcon(VOutline)},
 };

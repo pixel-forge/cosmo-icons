@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+    <rect x="0" y="0" width="140" height="140" rx="10" ry="10" stroke="none"
+          fill="#000"
+          data-ci-fill="true"
+          data-ci-stroke="false"
+    />
+    <path
+        d="m121.41,10H18.59c-7.32,0-11.27,8.61-6.51,14.19l43.78,51.26v30.36c0,2.42,1.02,4.73,2.81,6.36l18.31,16.7c2.75,2.51,7.17.55,7.17-3.18v-50.24l43.78-51.26c4.76-5.58.81-14.19-6.51-14.19Z"
+        stroke="none"
+        fill="#fff"
+        data-ci-fill="true"
+        data-ci-stroke="false"
+    />
+</svg>
