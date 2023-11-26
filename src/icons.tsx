@@ -18,7 +18,7 @@ import {
 	SearchSolid,
 	VOutline,
 	VRegular,
-	VSolid
+	VSolid, XOutline, XRegular, XSolid
 } from './icon-components';
 
 type CosmoIconSupplier = (props: React.HTMLProps<HTMLDivElement>) => React.JSX.Element;
@@ -36,4 +36,5 @@ export const CosmoIcons = {
 	menu: {regular: cosmoIcon(MenuRegular), solid: cosmoIcon(MenuSolid), outline: cosmoIcon(MenuOutline)},
 	filter: {regular: cosmoIcon(FilterRegular), solid: cosmoIcon(FilterSolid), outline: cosmoIcon(FilterOutline)},
 	v: {regular: cosmoIcon(VRegular), solid: cosmoIcon(VSolid), outline: cosmoIcon(VOutline)},
+	x: {regular: cosmoIcon(XRegular), solid: cosmoIcon(XSolid), outline: cosmoIcon(XOutline)},
 };
